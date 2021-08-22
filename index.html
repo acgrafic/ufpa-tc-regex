@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.87.0">
+    <title>Checkout example · Bootstrap v5.1</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/checkout/">
+
+
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+        }
+        
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+    </style>
+
+
+    <!-- Custom styles for this template -->
+    <link href="form-validation.css" rel="stylesheet">
+</head>
+
+<body class="bg-light">
+
+    <div class="container">
+        <main>
+            <div class="py-5 text-center">
+                <img class="d-block mx-auto mb-4" src="assets/brand/ufpa.png" alt="" style="width:10%">
+                <h2>Trabalho 01 - Validação de expressões regulares</h2>
+                <p class="lead">Trabalho de expressões regulares referente a disciplina de Teoria da Computação do Programa de Pós Graduação de Ciência da Computação (PPGCC) da Universidade Federal do Pará (UFPA) </p>
+            </div>
+
+            <div class="py-1 text-justfy">
+                <h3>Comando</h3>
+                <p class="lead">Desenvolver na linguagem de programação de preferência, um conjunto de máscaras de validação, por meio de expressões regulares, que obedecem as especificações prévios de cada campo abaixo. Considere os seguintes alfabetos: <br> Σ = {a,
+                    b, c, …, z} <br>Γ = {A, B, C,…, Z} <br> N = {0, 1, 2, …, 9} </p>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="row g-3">
+                        <div class="col-12">
+                            <!-- Example single danger button -->
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-primary dropdown-toggle" action="changeFiled" data-bs-toggle="dropdown" aria-expanded="false">Selecione o campo a ser validado</button>
+                                <ul class="dropdown-menu">
+                                </ul>
+                                <input type="hidden" id="fieldSelected">
+                            </div>
+
+                        </div>
+                        <div class="col-12" id="instructions">
+                            <h4></h4>
+                            <p class="lead"></p>
+                        </div>
+                    </div>
+                    <div id="form" class="row g-3 visually-hidden">
+                        <div class="col-8">
+                            <input type="name" class="form-control" id="fieldToValidate" placeholder="Digite o valor para validação aqui">
+                        </div>
+                        <div class="col-2">
+                            <button class="w-100 btn btn-primary btn-lg action" action="validateRegEx">Validar</button>
+                        </div>
+                        <div class="col-2">
+                            <button class="w-100 btn btn-danger btn-lg action" action="clear">Limpar</button>
+                        </div>
+                    </div>
+                    <div class="row g-3 py-1">
+                        <div class="col-10" id="result">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+
+        <footer class="my-5 pt-5 text-muted text-center text-small">
+            <p class="mb-1">&copy; 2017–2021 Company Name</p>
+            <ul class="list-inline">
+                <li class="list-inline-item"><a href="#">Privacy</a></li>
+                <li class="list-inline-item"><a href="#">Terms</a></li>
+                <li class="list-inline-item"><a href="#">Support</a></li>
+            </ul>
+        </footer>
+    </div>
+
+
+    <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="form-validation.js"></script>
+
+    <script>
+    </script>
+
+</body>
+
+</html>
